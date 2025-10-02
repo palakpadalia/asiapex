@@ -58,12 +58,12 @@ frappe.ui.form.on('Quotation', {
     refresh(frm) {
 
         // Hide the default Print button after a short delay
-        setTimeout(() => {
-            if (frm.page && frm.page.wrapper) {
-                frm.page.wrapper.find('button[data-original-title="Print"]').hide();
-                frm.page.wrapper.find('button[title="Print"]').hide();
-            }
-        }, 100);
+        // setTimeout(() => {
+        //     if (frm.page && frm.page.wrapper) {
+        //         frm.page.wrapper.find('button[data-original-title="Print"]').hide();
+        //         frm.page.wrapper.find('button[title="Print"]').hide();
+        //     }
+        // }, 100);
 
         // Add a custom Print button if the document is not new or cancelled
         if (!frm.is_new() && frm.doc.status !== 'Cancelled') {
