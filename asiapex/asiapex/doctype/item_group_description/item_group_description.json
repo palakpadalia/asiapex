@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-02 17:18:18.029902",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_insert_before",
+  "insert_before",
+  "item_group",
+  "item_description",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "insert_before",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Insert Before "
+  },
+  {
+   "columns": 2,
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Group",
+   "options": "Item Category",
+   "reqd": 1
+  },
+  {
+   "columns": 5,
+   "fieldname": "item_description",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Description",
+   "options": "Description",
+   "reqd": 1
+  },
+  {
+   "columns": 6,
+   "fetch_from": "item_description.description",
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "item_insert_before",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Insert Before",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-10-02 21:12:59.275380",
+ "modified_by": "Administrator",
+ "module": "Asiapex",
+ "name": "Item Group Description",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
