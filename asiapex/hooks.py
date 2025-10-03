@@ -34,7 +34,7 @@ app_license = "mit"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "asiapex/public/scss/website"
-
+    
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
 # webform_include_css = {"doctype": "public/css/doctype.css"}
@@ -43,7 +43,9 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-doctype_js = {"Quotation" : "public/js/quotation.js"}
+doctype_js = {
+    "Quotation": "public/js/quotation.js",
+}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -242,3 +244,16 @@ doctype_js = {"Quotation" : "public/js/quotation.js"}
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+# hooks.py
+fixtures = [
+    {
+        "dt": "Property Setter",
+        "filters": [
+            [
+                "name",
+                "in",
+                ["User-send_welcome_email-default"],
+            ]
+        ],
+    }
+]

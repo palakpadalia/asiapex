@@ -1,0 +1,18 @@
+[
+ {
+  "default_value": null,
+  "doc_type": "User",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "send_welcome_email",
+  "is_system_generated": 1,
+  "modified": "2025-10-03 23:47:32.422971",
+  "module": null,
+  "name": "User-send_welcome_email-default",
+  "property": "default",
+  "property_type": "Text",
+  "row_name": null,
+  "value": "0"
+ }
+]
